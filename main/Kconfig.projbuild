@@ -1,0 +1,35 @@
+menu "UdpSender Configuration"
+
+    config UDPSENDER_WIFI_SSID
+        string "WiFi SSID"
+        default "myssid"
+        help
+            SSID (network name) for UdpSender to connect to.
+
+    config UDPSENDER_WIFI_PASSWORD
+        string "WiFi Password"
+        default "mypassword"
+        help
+            WiFi password (WPA or WPA2) forUdpSender to use.
+
+    config UDPSENDER_RETRY_PERIOD_MS
+        int "Retry period, in ms"
+        range 0 65535
+        default 10000
+        help
+            Set the period between two successive connection attempts.
+
+    config UDPSENDER_IPV4_ADDR
+        string "IPV4 Address"
+        default "192.168.1.10"
+        help
+            IPV4 address to which UdpSender will send data.
+
+    config UDPSENDER_PORT
+        int "Port"
+        range 0 65535
+        default 44444
+        help
+            The remote port to which UdpSender will send data.
+
+endmenu
