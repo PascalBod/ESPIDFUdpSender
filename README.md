@@ -44,6 +44,20 @@ Replace `<port>` by the name of the serial-over-USB port.
 
 To exit the serial monitor, type ``Ctrl-]``.
 
+## End-to-end test
+
+A simple configuration is to run an UDP server on a computer that is on the same LAN that the Wi-Fi access point.
+
+Configure the application with the IP address of this computer. 
+
+Then, if this computer runs Linux or macOS, enter the following command:
+
+```
+nc -u -lk 0.0.0.0 44444
+```
+
+Every received datagram will be displayed.
+
 ## Architecture
 
 ### Tasks
