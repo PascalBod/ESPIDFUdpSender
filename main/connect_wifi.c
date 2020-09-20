@@ -124,7 +124,7 @@ static bool init_wifi(void) {
 	// And register the same event handler to receive the event telling that an
 	// IP address has been assigned. esp_netif will automatically start the DHCP client
 	// once the Wi-Fi task is connected to the AP.
-	esp_event_handler_register(IP_EVENT, IP_EVENT_STA_GOT_IP, &event_handler, NULL);
+	esp_rs = esp_event_handler_register(IP_EVENT, IP_EVENT_STA_GOT_IP, &event_handler, NULL);
 	if (esp_rs != ESP_OK) {
 		ESP_LOGE(TAG, "Error from esp_event_handler_register: %d", esp_rs);
 		return false;
