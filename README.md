@@ -37,7 +37,7 @@ To configure the application, run `idf.py menuconfig`, and select **UdpSender Co
 To build, flash and monitor the output from the application, run:
 
 ```
-idp.py -p <port> flash monitor
+idf.py -p <port> flash monitor
 ```
 
 Replace `<port>` by the name of the serial-over-USB port.
