@@ -17,6 +17,10 @@ The hardware target is an [ESP32-DevKitC](https://www.espressif.com/en/products/
 
 ESP-IDF release is `release/4.1`.
 
+## Development environment
+
+This [short tutorial](https://github.com/PascalBod/lm20.1-esp32-eclipse) explains how to set up a virtual machine configured for ESP32 software development with Eclipse.
+
 ## Reference documents
 
 * [ESP-IDF Programming Guide](https://docs.espressif.com/projects/esp-idf/en/release-v4.1/index.html)
